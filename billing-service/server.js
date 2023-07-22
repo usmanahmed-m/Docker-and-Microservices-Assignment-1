@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 
 app.post("/billing", (req, res) => {
   console.log('Received data from Shipping Service');
+  console.log('Billing Data: ',req.body);
   res.send(req.body);
 });
 

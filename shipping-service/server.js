@@ -20,7 +20,7 @@ app.get("/shipping", (req, res) => {
 });
 
 app.post("/shipping", async (req, res) => {
-  console.log(req.body);
+  console.log('Shipping Data: ',req.body);
   try {
   await axios.post("http://billing:5004/billing", {
     employeeId: req.body.employeeId,
